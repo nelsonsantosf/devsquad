@@ -17,11 +17,12 @@ git clone https://github.com/nelsonsantosf/devsquad.git
 ```
 
 - Renomeie o arquivo ```.env.example``` para ```.env```
+- Altere os dados de conexão com o banco de dados no arquivo ```.env```
 - Instale os pacotes do laravel e node
 
 ```bash
 composer install
-node install
+npm install
 ```
 - Rode os comando para configuração da aplicação
 
