@@ -1,0 +1,13 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// Variables
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Landing Page
+@import 'pages/landingpage';

@@ -1,0 +1,294 @@
+//Extends
+.button {
+    font: {
+        family: 'Montserrat', sans-serif;
+        weight: bold;
+    }
+    text: {
+        align: center;
+        transform: uppercase;
+    }
+    display: block;
+    background-color: $green-eucalyptus;
+    color: $white;
+    @include border-radius(37px);
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+//General
+.title {
+    font : {
+        family: $font-family-montserrat;
+        size: 35px;
+        weight: bold;
+    }
+    color: $gray;
+    line-height: 50px;
+}
+
+.text {
+    font : {
+        family: $font-family-montserrat;
+        size: 26px;
+        weight: 400;
+    }
+
+    color: $gray-dark;
+    line-height: 40px;
+}
+
+//Layout
+#nav {
+    height: 85px;
+    background-color: $white;
+
+    & .navbar-brand {
+        height: 85px;
+        line-height: 75px;
+    }
+
+}
+
+#header {
+    padding: 170px 0;
+    background-image: url(../images/austin-distel-wawEfYdpkag-unsplash.png);
+    background-size: cover;
+
+    & h1 {
+        font : {
+            family: $font-family-montserrat;
+            size: 85px;
+            weight: bold;
+        }
+        line-height: 80px;
+        letter-spacing: 1.27px;
+        color: $white;
+    }
+
+    & .text {
+        margin-top: 10px;
+        color: $white;
+    }
+
+    & .button {
+        width: 270px;
+        height: 60px;
+        margin-top: 35px;
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+    & .text-description {
+        margin-top: 15px;
+        font-size: 19px;
+        color: $white;
+    }
+}
+
+#section-1 {
+    padding: 35px 0;
+    background-color: $gray-light;
+
+    & .title {
+        & span {
+            color: $green-eucalyptus;
+        }
+    }
+}
+
+#section-2 {
+    padding: 75px 0;
+    background-color: $white;
+
+    & .img-description {
+        float: left;
+    }
+
+    & .text-description {
+        margin-top: 15px;
+    }
+}
+
+#section-3 {
+    padding: 50px 0;
+    background-color: $gray-light;
+
+    & .img-description {
+        width: 80%;
+        display: block;
+    }
+
+    & .button {
+        width: 180px;
+        height: 44px;
+        line-height: 44px;
+    }
+
+    & .subtitle {
+        font: {
+            family: $font-family-montserrat;
+            size: 28px;
+            weight: bold;
+        }
+        margin-top: 20px;
+        color: $gray;
+    }
+
+    & .text-description {
+        font: {
+            family: $font-family-montserrat;
+            size: 26px;
+            weight: 500;
+        }
+        color: $gray;
+    }
+}
+
+#section-4 {
+    padding: 75px 0;
+    background-color: $white;
+
+    & .title {
+        margin-bottom: 30px;
+    }
+
+    & .block {
+        display: block;
+        padding: 30px;
+        margin-top: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+        & .profile{
+            border-bottom: 1px solid $gray-light;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+
+            & .img-profile {
+                width: 55px;
+                height: 55px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            & .profile-info {
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+
+                & p {
+                    margin: 2px 0;
+                    font-family: $font-family-montserrat;
+                    color: $gray;
+
+                    &.profile-name {
+                        font-size: 20px;
+                    }
+
+                    &.profile-position {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+#section-5 {
+    padding: 25px 0;
+    background-color: $gray-light;
+
+    & .title {
+        font-size: 65px;
+        line-height: 80px;
+    }
+
+    & .button {
+        width: 370px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 24px;
+    }
+
+    & .text {
+        margin-top: 20px;
+        font-size: 19px;
+        line-height: 25px;
+    }
+}
+
+#footer {
+    padding: 60px 0;
+    background: $gray-dark;
+
+    & .logo-footer, & .list-inline {
+        margin-top: 20px,
+    }
+
+    & .menu-footer {
+        & li {
+            margin-bottom: 10px;
+
+            & a {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+//Retina Display
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #header {
+        background-image: url(../images/austin-distel-wawEfYdpkag-unsplash@2x.png);
+    }
+}
+
+//Mobile
+@media (max-width: 768px) {
+    //General
+    .text {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    //Layout
+    #header {
+        & h1 {
+            font-size: 50px;
+        }
+
+        .text-description {
+            font-size: 12px;
+        }
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    #section-1 {
+        text-align: center;
+    }
+
+    #section-3 {
+        & .img-description {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #section-5 {
+        & .title {
+            font-size: 50px;
+        }
+    }
+
+}
